@@ -3,7 +3,7 @@ import Title from "../components/Title"
 
 export default function GameScreen (){
 return <View style={styles.screen}>
-    <Title title ={'Opponents Guess'}/>
+    <Title>Oponents Guess</Title>
     {/* Guess */}
     <View>
         <Text>Higher or Lower</Text>
@@ -21,13 +21,5 @@ const styles = StyleSheet.create({
         flex:1,
         padding:24,
     },
-    title:{
-        fontSize:24,
-        fontWeight:"bold",
-        color:'#ddb52f',
-        textAlign:"center",
-        borderWidth:2,
-        borderColor:'#ddb52f',
-        padding:10
-    }
+
 })
