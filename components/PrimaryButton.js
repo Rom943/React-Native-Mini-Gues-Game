@@ -1,7 +1,11 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
+import { useState } from "react";
+import StartGameScreen from "../screens/StartGameScreen";
+import GameScreen from "../screens/GameScreen";
 
-export default function PrimaryButton({ children }) {
-  function pressHandler() {}
+export default function PrimaryButton({ children, onPress }) {
+
+
   return (
     <View style={styles.buttonOuterContainer}>
       <Pressable
@@ -10,7 +14,7 @@ export default function PrimaryButton({ children }) {
             ? [styles.pressed, styles.buttonInnerContainer]
             : styles.buttonInnerContainer
         }
-        onPress={pressHandler}
+        onPress={onPress}
       >
         <Text style={styles.buttonText}>{children}</Text>
       </Pressable>
