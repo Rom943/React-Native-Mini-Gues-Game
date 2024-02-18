@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     borderRadius: 28,
     margin: 4,
-    minWidth: 120,
+    minWidth: 150,
   },
   pressed: {
     opacity: 0.75,
