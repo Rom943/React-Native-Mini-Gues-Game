@@ -5,7 +5,7 @@ export default function PrimaryButton ({children}){
 
     }
     return (
-        <View style={styles.container}>
+        <View style={styles.buttonContainer}>
         <Pressable onPress={pressHandler} >
             <Text style={styles.buttonText}>{children}</Text>
         </Pressable>
@@ -14,8 +14,8 @@ export default function PrimaryButton ({children}){
 }
 
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor:'#560c40',
+    buttonContainer:{
+        backgroundColor:'#f11364',
         borderRadius:28,
         paddingVertical:8,
         paddingHorizontal:16,
