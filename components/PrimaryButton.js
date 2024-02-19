@@ -1,7 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
-import { useState } from "react";
-import StartGameScreen from "../screens/StartGameScreen";
-import GameScreen from "../screens/GameScreen";
+
 
 export default function PrimaryButton({ children, onPress }) {
 
